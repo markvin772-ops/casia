@@ -2,224 +2,141 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Introdução à Informática - CASIA 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desenvolvendo Habilidades - CASIA 2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {
-  background-color:#fff4e3;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-  color:#333;
-  margin:0;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#fff4e6,#ffe7c2);
+    min-height:100vh;
+    color:#6b4a21;
 }
 
 header{
-  background-color:#ffe0b3;
-  padding:20px;
-  text-align:center;
-  border-bottom:3px solid #ffa94d;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:15px;
+    background:linear-gradient(135deg,#ff9f43,#ffcc70);
+    padding:22px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 6px 25px rgba(0,0,0,.18);
 }
 
-header img{height:60px}
+header img{
+    height:70px;
+}
 
 header h1{
-  margin:0;
-  font-size:2em;
-  color:#8b3e00;
+    color:#7a3e00;
+    text-align:center;
 }
 
 .container{
-  max-width:960px;
-  margin:30px auto;
-  padding:0 20px;
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 20px;
 }
 
-.box{
-  background:#fff7ea;
-  border:1px solid #ffd8a8;
-  border-radius:12px;
-  padding:25px;
-  margin-bottom:40px;
-  line-height:1.6;
-  box-shadow:0 3px 8px rgba(0,0,0,0.08);
+.section{
+    background:rgba(255,255,255,.45);
+    border:1px solid rgba(255,255,255,.6);
+    border-radius:30px;
+    padding:30px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
 }
 
-.box h2{
-  margin-top:0;
-  color:#cc6600;
+h2{
+    text-align:center;
+    color:#7a3e00;
+    margin-bottom:10px;
 }
 
-.box img{
-  width:100%;
-  max-height:380px;
-  object-fit:cover;
-  border-radius:6px;
-  margin:15px 0;
-  border:1px solid #ccc;
+p{
+    text-align:center;
+    margin-bottom:20px;
 }
 
-.box ul{padding-left:20px}
+.game-container{
+    width:90%;
+    max-width:900px;
+    height:600px;
+    margin:0 auto;
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
 
-.highlight{
-  background:#fff0d9;
-  border-left:6px solid #ffa94d;
-  padding:12px 15px;
-  border-radius:6px;
-  margin:15px 0;
+.game-container iframe{
+    width:100%;
+    height:100%;
+    border:none;
 }
 
 footer{
-  text-align:center;
-  padding:20px;
-  background:#ffe0b3;
-  border-top:2px solid #ffa94d;
-  color:#8b3e00;
+    margin-top:30px;
+    text-align:center;
+    padding:25px;
+    background:linear-gradient(135deg,#ffcc70,#ffd992);
+    color:#7a3e00;
 }
 
-@media(max-width:600px){
-  header{flex-direction:column}
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+    }
+
+    .game-container{
+        width:100%;
+        height:500px;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<img src="https://i.imgur.com/OZiRh07.png" alt="Logo CASIA">
-<h1>Introdução à Informática - CASIA 2026</h1>
+    <img src="https://i.imgur.com/OZiRh07.png" alt="Logo CASIA">
+    <h1>Desenvolvendo Habilidades</h1>
 </header>
 
 <div class="container">
 
-<div class="box">
-<center><h2>O que é a Informática?</h2></center>
+    <div class="section">
 
-<p>A <strong>informática</strong> é a área que estuda como usamos computadores e tecnologias para <strong>criar, armazenar, processar e compartilhar informações</strong>.</p>
+        <h2>Jogo Educativo</h2>
 
-<p>No mundo moderno praticamente tudo depende de informação. Escolas, hospitais, bancos, empresas e governos utilizam sistemas digitais para organizar dados e se comunicar.</p>
+        <p>
+            Desenvolva sua atenção, concentração e raciocínio lógico enquanto se diverte.
+        </p>
 
-<div class="highlight">
-Dentro da informática existe uma área chamada <strong>TI (Tecnologia da Informação)</strong>, que reúne todas as tecnologias usadas para lidar com informações digitais.
-</div>
+        <div class="game-container">
+            <iframe
+                src="https://play.famobi.com/bubble-woods/A-WPCLV"
+                allowfullscreen>
+            </iframe>
+        </div>
 
-<p>No nosso dia a dia usamos informática o tempo todo:</p>
-
-<ul>
-<li>Mandar mensagens pelo celular</li>
-<li>Assistir vídeos</li>
-<li>Jogar online</li>
-<li>Pesquisar algo no Google</li>
-<li>Usar redes sociais</li>
-<li>Estudar pela internet</li>
-</ul>
-
-<p>Tudo isso acontece porque existem computadores e redes que permitem que a informação viaje entre dispositivos.</p>
-
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Tecnologia e computadores">
-
-</div>
-
-<div class="box">
-<center><h2>O que é a Internet?</h2></center>
-
-<p>A <strong>internet</strong> é uma gigantesca rede mundial que conecta bilhões de dispositivos como computadores, celulares, servidores e roteadores.</p>
-
-<p>Ela permite que informações sejam transmitidas entre esses dispositivos em altíssima velocidade.</p>
-
-<div class="highlight">
-Grande parte dessas informações é armazenada em <strong>servidores</strong>, que são computadores muito poderosos responsáveis por guardar dados e responder às solicitações feitas pelos usuários.
-</div>
-
-<p>Quando acessamos um site, assistimos um vídeo ou usamos uma rede social, os dados viajam pela internet até esses servidores e voltam para o nosso dispositivo em poucos instantes.</p>
-
-<p>Esses servidores ficam espalhados pelo mundo em locais chamados <strong>data centers</strong>.</p>
-
-<p>As informações viajam através de tecnologias como:</p>
-
-<ul>
-<li>Cabos de <strong>fibra óptica</strong></li>
-<li><strong>Cabos submarinos</strong> entre continentes</li>
-<li><strong>Antenas de rede móvel</strong></li>
-<li><strong>Roteadores</strong></li>
-</ul>
-
-<img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Mapa da internet">
-
-</div>
-
-<div class="box">
-<center><h2>Computadores e Celulares</h2></center>
-
-<p>Muitas pessoas pensam que computadores e celulares são coisas muito diferentes. Mas na verdade eles funcionam de forma muito parecida.</p>
-
-<p>Os dois possuem componentes importantes:</p>
-
-<ul>
-<li><strong>Processador (CPU)</strong> – o cérebro da máquina</li>
-<li><strong>Memória (RAM)</strong> – usada pelos programas</li>
-<li><strong>Armazenamento</strong> – onde ficam arquivos e aplicativos</li>
-<li><strong>Sistema Operacional</strong> – software que controla o aparelho</li>
-</ul>
-
-<div class="highlight">
-📱 Um <strong>smartphone é basicamente um computador de bolso</strong>.
-</div>
-
-<p>A principal diferença entre eles é o tamanho, a mobilidade e a forma de uso.</p>
-
-<img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=1200&auto=format&fit=crop" alt="Computador e componentes">
-
-</div>
-
-<div class="box">
-<center><h2>Reflexão: Tecnologia e Sociedade</h2></center>
-
-<p>A tecnologia trouxe muitas facilidades para nossas vidas:</p>
-
-<ul>
-<li>Comunicação instantânea</li>
-<li>Acesso rápido ao conhecimento</li>
-<li>Novas profissões</li>
-<li>Educação online</li>
-<li>Entretenimento</li>
-</ul>
-
-<p>Mas também precisamos pensar em <strong>como usamos a tecnologia</strong>.</p>
-
-<ul>
-<li>Não acreditar em tudo que aparece na internet</li>
-<li>Usar o tempo com equilíbrio</li>
-<li>Respeitar outras pessoas online</li>
-<li>Usar a tecnologia para aprender coisas novas</li>
-</ul>
-
-<div class="highlight">
-A tecnologia não é boa nem ruim por si só. Tudo depende de <strong>como nós usamos ela</strong>.
-</div>
-
-<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop" alt="Servidores de internet">
-
-</div>
-
-<div class="box">
-<center><h2>🚀 DESAFIO</h2></center>
-
-<p>Vamos exercitar um pouco do que aprendemos hoje sobre informática, internet e tecnologia da informação.</p>
-
-<h3>Desafio 1</h3>
-<iframe src="https://wordwall.net/pt/embed/e115c40bac2f4009969fbc25a87d2783?themeId=21&templateId=5&fontStackId=0" width="100%" height="380" style="border:none;border-radius:8px;margin-bottom:20px"></iframe>
-
-<h3>Desafio 2</h3>
-<iframe src="https://wordwall.net/pt/embed/1ed984e8d50c4f2d8510ed4e513370de?themeId=3&templateId=2&fontStackId=0" width="100%" height="380" style="border:none;border-radius:8px"></iframe>
-
-</div>
+    </div>
 
 </div>
 
 <footer>
-© CASIA 2026 • Aula de Introdução à Informática
+    © CASIA 2026 - Desenvolvendo Habilidades
 </footer>
 
 </body>
