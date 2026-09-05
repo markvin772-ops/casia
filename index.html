@@ -126,26 +126,13 @@ footer{
 
         <div class="game-container">
             <iframe
-                id="geometryGame"
+                src="https://html5.gamedistribution.com/6fc3bef749fd4ce2b5959444febe9ee0/?gd_sdk_referrer_url=https://markvin772-ops.github.io/casia/"
                 width="800"
                 height="600"
-                scrolling="no"
+                scrolling="none"
                 frameborder="0"
                 allowfullscreen>
             </iframe>
-
-            <script>
-                // A GameDistribution exige que gd_sdk_referrer_url seja
-                // o endereço EXATO da página onde o jogo está incorporado.
-                // Assim, quando esta página estiver no GitHub Pages,
-                // o endereço correto é preenchido automaticamente.
-                const gameFrame = document.getElementById("geometryGame");
-                const pageUrl = window.location.href;
-
-                gameFrame.src =
-                    "https://html5.gamedistribution.com/6fc3bef749fd4ce2b5959444febe9ee0/" +
-                    "?gd_sdk_referrer_url=" + encodeURIComponent(pageUrl);
-            </script>
         </div>
 
     </div>
